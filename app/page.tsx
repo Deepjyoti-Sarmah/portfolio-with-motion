@@ -1,5 +1,6 @@
 import { Container } from "@/components/container";
 import { Heading } from "@/components/heading";
+import { Projects } from "@/components/projects";
 import { Subheading } from "@/components/sub-heading";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
           I'm a software engineer with a passion for building scalable and
           efficient systems.
         </Subheading>
+        <Projects />
       </Container>
     </div>
   );

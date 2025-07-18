@@ -1,6 +1,5 @@
 import { Container } from "@/components/container";
 import { Heading } from "@/components/heading";
-import { SectionHeading } from "@/components/section-heading";
 import { Subheading } from "@/components/sub-heading";
 import TimeLine from "@/components/timeline";
 
@@ -15,10 +14,6 @@ export default function AboutPage() {
           design, thoughtful architecture, and keeping things as simple as
           possible (but no simpler).
         </Subheading>
-
-        <SectionHeading delay={0.2}>
-          Here's a timeline of my life achievements.
-        </SectionHeading>
         <TimeLine />
       </Container>
     </div>

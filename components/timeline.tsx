@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { IconCircleCheckFilled } from "@tabler/icons-react";
 import { motion, useInView } from "motion/react";
 import React, { useRef } from "react";
+import { SectionHeading } from "./section-heading";
 
 type Data = {
   title: string;
@@ -82,8 +83,11 @@ export default function TimeLine() {
   return (
     <div
       ref={ref}
-      className="shadow-primary my-6 border-t border-secondary px-4 py-4"
+      className="shadow-primary my-4 border-t border-secondary px-4 py-4"
     >
+      <SectionHeading delay={0.2} className="mb-4">
+        Here's a timeline of my life achievements.
+      </SectionHeading>
       {data.map((year, index) => (
         <div key={year.title} className="mb-4">
           <motion.h2

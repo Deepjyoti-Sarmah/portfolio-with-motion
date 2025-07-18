@@ -1,6 +1,8 @@
 import { Container } from "@/components/container";
 import { Heading } from "@/components/heading";
+import { Projects } from "@/components/projects";
 import { Subheading } from "@/components/sub-heading";
+import { projects } from "@/constants/projects";
 
 export default function ProjectsPage() {
   return (
@@ -13,7 +15,7 @@ export default function ProjectsPage() {
           design, thoughtful architecture, and keeping things as simple as
           possible (but no simpler).
         </Subheading>
-        {/* <Projects projects={projects.slice(0, 3)} /> */}
+        <Projects projects={projects.slice(0, 3)} />
       </Container>
     </div>
   );
