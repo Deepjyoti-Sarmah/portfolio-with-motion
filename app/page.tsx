@@ -2,6 +2,7 @@ import { Container } from "@/components/container";
 import { Heading } from "@/components/heading";
 import { Projects } from "@/components/projects";
 import { Subheading } from "@/components/sub-heading";
+import { TestimonialsPage } from "@/components/testimonials";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           efficient systems.
         </Subheading>
         <Projects />
+        <TestimonialsPage />
       </Container>
     </div>
   );
