@@ -3,6 +3,7 @@ import { Heading } from "@/components/heading";
 import { Projects } from "@/components/projects";
 import { Subheading } from "@/components/sub-heading";
 import { TestimonialsPage } from "@/components/testimonials";
+import WorkTimeline from "@/components/work-timeline";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
           efficient systems.
         </Subheading>
         <Projects />
+        <WorkTimeline />
         <TestimonialsPage />
       </Container>
     </div>

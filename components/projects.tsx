@@ -16,9 +16,11 @@ export function Projects({
   projects?: Project[];
 }) {
   return (
-    <div className="my-4 border-t border-secondary px-4">
-      <SectionHeading delay={0.2}>A lifetime in projects</SectionHeading>
-      <div className="grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 md:grid-cols-3">
+    <div className="my-4 border-t border-secondary px-4 py-4">
+      <SectionHeading delay={0.2} className="mb-4">
+        A lifetime in projects
+      </SectionHeading>
+      <div className="grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 md:grid-cols-3 ">
         {projects.map((project, idx) => (
           <MotionCard
             key={idx}

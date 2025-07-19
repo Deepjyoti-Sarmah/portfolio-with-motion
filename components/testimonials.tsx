@@ -45,7 +45,7 @@ export const TestimonialsPage = () => {
       <SectionHeading className="mb-4" delay={0.8}>
         People love my work
       </SectionHeading>
-      <div className="flex mask-r-from-80% mask-l-from-80% py-4">
+      <div className="flex mask-r-from-80% mask-l-from-80% py-2">
         <Marquee speed={30} pauseOnHover className="py-4">
           {data.map((item, idx) => (
             <TestimonialCard key={`Testimonial-${idx}`} {...item} />
