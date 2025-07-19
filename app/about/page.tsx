@@ -6,7 +6,7 @@ import TimeLine from "@/components/timeline";
 export default function AboutPage() {
   return (
     <div className="flex min-h-screen items-start justify-start">
-      <Container className="min-h-screen px-8 md:pt-20 md:pb-10">
+      <Container className="min-h-screen pt-[80px]  px-8 md:pt-20 md:pb-10  ">
         <Heading>About Me</Heading>
         <Subheading>
           I'm a curious developer who loves building clean, functional tools

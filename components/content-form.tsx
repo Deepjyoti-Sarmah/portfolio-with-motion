@@ -101,7 +101,7 @@ export const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="bg-accent font-semibold rounded-md px-4 py-2 text-foreground border border-accent shadow shadow-accent-foreground hover:shadow-md hover:scale-[1.01] transition-shadow duration-300 ease-in-out"
+          className="bg-foreground font-semibold rounded-md px-4 py-2 text-primary-foreground border border-foreground shadow shadow-foreground hover:shadow-md hover:scale-[1.01] transition-shadow duration-300 ease-in-out"
         >
           Send Message
         </button>

@@ -7,7 +7,7 @@ import { projects } from "@/constants/projects";
 export default function ProjectsPage() {
   return (
     <div className="flex min-h-screen items-start justify-start">
-      <Container className="min-h-screen px-8 md:pt-20 md:pb-10">
+      <Container className="min-h-screen pt-[80px]  px-8 md:pt-20 md:pb-10">
         <Heading>Projects</Heading>
         <Subheading>
           I'm a curious developer who loves building clean, functional tools

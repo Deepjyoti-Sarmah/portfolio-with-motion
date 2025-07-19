@@ -8,7 +8,7 @@ import WorkTimeline from "@/components/work-timeline";
 export default function Home() {
   return (
     <div className="flex min-h-screen items-start justify-start">
-      <Container className="min-h-screen  px-8 md:pt-20 md:pb-10">
+      <Container className="min-h-screen pt-[80px]  px-8 md:pt-20 md:pb-10">
         <Heading>Deepjyoti Sarmah</Heading>
         <Subheading>
           I'm a software engineer with a passion for building scalable and
