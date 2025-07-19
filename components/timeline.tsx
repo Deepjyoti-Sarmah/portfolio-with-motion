@@ -16,15 +16,23 @@ type Data = {
 
 export default function TimeLine() {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.6 });
+  const isInView = useInView(ref, {
+    once: true,
+    amount: 0.3,
+  });
+
   const data: Data[] = [
     {
       title: "2025",
       content: [
         {
-          title: "Reached $20K MRR with my VSCode fork.",
+          title: "Launched PingPanda",
           description:
-            "Reached the ravenue milestone of $20K MRR with my VSCOde fork.",
+            "Shipped an AI support tool with guest login and demo mode.",
+        },
+        {
+          title: "More open source",
+          description: "Published cool side projects with AI. Great feedback!",
         },
       ],
     },
@@ -32,9 +40,14 @@ export default function TimeLine() {
       title: "2024",
       content: [
         {
-          title: "Reached $20K MRR with my VSCode fork.",
+          title: "Dived into Solana & DePIN",
           description:
-            "Reached the ravenue milestone of $20K MRR with my VSCOde fork.",
+            "Built staking tools using BonkSOL. Attended Solana Summit.",
+        },
+        {
+          title: "Built real-time apps",
+          description:
+            "Used Golang, PostgreSQL, Redis. Focused on speed & scale.",
         },
       ],
     },
@@ -42,9 +55,12 @@ export default function TimeLine() {
       title: "2023",
       content: [
         {
-          title: "Reached $20K MRR with my VSCode fork.",
-          description:
-            "Reached the ravenue milestone of $20K MRR with my VSCOde fork.",
+          title: "Interned at Hyperledger",
+          description: "Built a design system and shipped production features.",
+        },
+        {
+          title: "Won hackathons",
+          description: "Built AI + canvas tools at Devfolio events.",
         },
       ],
     },
@@ -52,9 +68,12 @@ export default function TimeLine() {
       title: "2022",
       content: [
         {
-          title: "Reached $20K MRR with my VSCode fork.",
-          description:
-            "Reached the ravenue milestone of $20K MRR with my VSCOde fork.",
+          title: "Leveled up frontend skills",
+          description: "Learned React, Tailwind, and started serious dev work.",
+        },
+        {
+          title: "Typed everything",
+          description: "Used TypeScript across backend & frontend.",
         },
       ],
     },
@@ -62,19 +81,12 @@ export default function TimeLine() {
       title: "2021",
       content: [
         {
-          title: "Reached $20K MRR with my VSCode fork.",
-          description:
-            "Reached the ravenue milestone of $20K MRR with my VSCOde fork.",
+          title: "Started coding",
+          description: "Built mini apps with JavaScript and loved it.",
         },
-      ],
-    },
-    {
-      title: "2020",
-      content: [
         {
-          title: "Reached $20K MRR with my VSCode fork.",
-          description:
-            "Reached the ravenue milestone of $20K MRR with my VSCOde fork.",
+          title: "First GitHub push",
+          description: "Uploaded my first public repo!",
         },
       ],
     },
@@ -85,7 +97,7 @@ export default function TimeLine() {
       ref={ref}
       className="shadow-primary my-4 border-t border-secondary px-4 py-4"
     >
-      <SectionHeading delay={0.2} className="mb-4">
+      <SectionHeading delay={0.2} className="mb-4 text-center sm:text-left">
         Here's a timeline of my life achievements.
       </SectionHeading>
       {data.map((year, index) => (
