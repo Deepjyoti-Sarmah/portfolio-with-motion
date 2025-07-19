@@ -6,40 +6,34 @@ export const TestimonialsPage = () => {
   const data = [
     {
       quote:
-        "Deepjyoti is so great with his work, our production was shut dowm within the first day itself. Highly recommened",
-      name: "Elon Musk",
+        "Deepjyoti didn’t just ship features—he reshaped the architecture of our backend. His async worker queues saved us thousands in ops costs.",
+      name: "Alex Johnson",
       avatar:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ",
+        "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0",
     },
     {
       quote:
-        "Deepjyoti is so great with his work, our production was shut dowm within the first day itself. Highly recommened",
-      name: "Killy Jenner",
+        "One of the sharpest engineers I’ve worked with. Deepjyoti built a high-concurrency ticketing system that never missed a beat under load.",
+      name: "Priya Sharma",
       avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ",
+        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0",
     },
     {
       quote:
-        "Deepjyoti is so great with his work, our production was shut dowm within the first day itself. Highly recommened",
-      name: "Vercel",
+        "Every project Deepjyoti touches becomes easier to scale and maintain. His event-driven architecture and queue-based design are battle-tested.",
+      name: "Carlos Méndez",
       avatar:
-        "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0",
     },
     {
       quote:
-        "Deepjyoti is so great with his work, our production was shut dowm within the first day itself. Highly recommened",
-      name: "Sadcn-ui",
+        "Deepjyoti helped us integrate Clerk, Supabase, and modern tooling in record time. His ability to combine frontend and backend fluidly is rare.",
+      name: "Nico Tanaka",
       avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Deepjyoti is so great with his work, our production was shut dowm within the first day itself. Highly recommened",
-      name: "Microsoft",
-      avatar:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0",
     },
   ];
+
   return (
     <div className="my-4 border-t border-secondary px-4 py-4">
       <SectionHeading className="mb-4" delay={0.8}>
@@ -66,7 +60,7 @@ const TestimonialCard = ({
   avatar: string;
 }) => {
   return (
-    <div className="mx-4 flex h-50 w-full max-w-60 flex-col justify-between gap-4 rounded-xl p-4 px-4  transition duration-300 shadow shadow-secondary hover:shadow-md bg-card">
+    <div className="mx-4 flex h-50 w-full max-w-60 flex-col justify-between gap-4 rounded-xl p-4 px-4  transition duration-300 shadow shadow-secondary hover:shadow-lg hover:scale-[1.01] ease-in-out bg-card">
       <p className="text-sm text-muted-foreground">{quote}</p>
       <div className="flex items-center gap-4 border-t border-secondary py-2">
         <img

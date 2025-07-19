@@ -44,7 +44,7 @@ export function Projects({
             </div>
 
             <CardContent className="space-y-2 p-2">
-              <CardTitle className="text-lg font-semibold leading-tight">
+              <CardTitle className="text-lg text-foreground font-semibold leading-tight">
                 {project.title}
               </CardTitle>
               <p className="text-sm text-muted-foreground">

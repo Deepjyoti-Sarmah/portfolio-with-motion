@@ -24,7 +24,7 @@ export default function WorkTimeline() {
           >
             {/* Left: Role, Company, Description */}
             <div className="flex flex-col gap-1 max-w-[75%]">
-              <div className="text-lg font-medium">
+              <div className="text-lg font-medium text-foreground">
                 {exp.role} @ {exp.company}
               </div>
               <div className="text-sm text-muted-foreground">
@@ -33,7 +33,7 @@ export default function WorkTimeline() {
             </div>
 
             {/* Right: Period */}
-            <div className="text-sm text-secondary-foreground whitespace-nowrap min-w-[100px] text-right">
+            <div className="text-sm text-muted-foreground whitespace-nowrap min-w-[100px] text-right">
               {exp.period}
             </div>
           </motion.div>
