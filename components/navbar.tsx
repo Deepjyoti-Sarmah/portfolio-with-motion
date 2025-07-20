@@ -13,9 +13,18 @@ import { IconCancel, IconMenu } from "@tabler/icons-react";
 
 export const Navbar = () => {
   const navItems = [
-    { title: "About", href: "/about" },
-    { title: "Projects", href: "/projects" },
-    { title: "Contact", href: "/contact" },
+    {
+      title: "About",
+      href: "/about",
+    },
+    {
+      title: "Projects",
+      href: "/projects",
+    },
+    // {
+    //   title: "Contact",
+    //   href: "/contact",
+    // },
   ];
 
   const [hovered, setHovered] = useState<number | null>(null);
