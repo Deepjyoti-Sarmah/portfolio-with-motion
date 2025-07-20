@@ -159,7 +159,7 @@ export default function TimeLine() {
                       ease: "easeInOut",
                       delay: 0.3 * idx,
                     }}
-                    className="pt-1 pl-6 text-sm text-neutral-600"
+                    className="pt-1 pl-6 text-sm text-muted-foreground"
                   >
                     {item.description}
                   </motion.p>
@@ -201,7 +201,7 @@ const Step = ({
       }}
       className={cn("flex items-start gap-2", className)}
     >
-      <IconCircleCheckFilled className="mt-1 size-4 text-secondary-foreground" />
+      <IconCircleCheckFilled className="mt-1 size-4 text-muted-foreground" />
       {children}
     </motion.div>
   );

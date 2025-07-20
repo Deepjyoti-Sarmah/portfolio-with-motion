@@ -24,7 +24,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const y = useTransform(scrollY, [0, 100], [0, 10]);
-  const width = useTransform(scrollY, [0, 100], ["58%", "50%"]);
+  const width = useTransform(scrollY, [0, 100], ["62%", "50%"]);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
