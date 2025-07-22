@@ -58,10 +58,10 @@ export const Navbar = () => {
         >
           <Link href="/" onClick={() => setIsOpen(false)}>
             <Image
-              className="h-10 w-10 rounded-full"
-              src="/avatar.jpg"
-              height={100}
-              width={100}
+              className="h-10 w-10 rounded-full transform -scale-x-100  "
+              src="/avatar.png"
+              height={90}
+              width={90}
               alt="Avatar"
             />
           </Link>

@@ -4,6 +4,7 @@ import { Projects } from "@/components/projects";
 import { Subheading } from "@/components/sub-heading";
 import { TestimonialsPage } from "@/components/testimonials";
 import WorkTimeline from "@/components/work-timeline";
+import ContactPage from "./contact/page";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Projects />
         <WorkTimeline />
         <TestimonialsPage />
+        <ContactPage />
       </Container>
     </div>
   );
