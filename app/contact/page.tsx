@@ -17,43 +17,42 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="my-4 border-t border-secondary px-4 py-4">
+    <div className="my-6 border-t border-secondary px-4 py-6">
       <SectionHeading delay={0.2} className="mb-6">
         Get in touch
       </SectionHeading>
-      <Subheading className="-p-2">
+      <Subheading className="mb-4 -ml-4">
         I'm open to freelancing offers. Reach out to me to inquire more about my
         work.
       </Subheading>
 
-      {/* Email action button */}
-      <div className="mt-2">
-        <Link href="mailto:deepjyotisarmah37@gmail.com" passHref legacyBehavior>
-          <motion.a href="#" style={{ textDecoration: "none" }}>
-            <motion.button
-              variants={buttonVariants}
-              initial="initial"
-              whileHover="hover"
-              transition={{
-                type: "spring",
-                stiffness: 300,
-                damping: 20,
-              }}
-              className="flex items-center bg-foreground text-primary-foreground px-6 py-3 rounded-md shadow"
-            >
+      <div className="mt-4 flex justify-center md:justify-start">
+        <Link href="mailto:deepjyotisarmah37@gmail.com" passHref>
+          <motion.div
+            className="inline-block"
+            initial="initial"
+            whileHover="hover"
+            variants={buttonVariants}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+            }}
+          >
+            <motion.button className="flex items-center bg-foreground text-primary-foreground px-6 py-3 rounded-md shadow">
               <span className="mr-2">Send a message</span>
               <motion.span
+                className="inline-block"
                 variants={iconVariants}
                 transition={{
                   duration: 0.3,
                   ease: "easeInOut",
                 }}
-                className="inline-block"
               >
                 <IconSend2 size={20} />
               </motion.span>
             </motion.button>
-          </motion.a>
+          </motion.div>
         </Link>
       </div>
     </div>
