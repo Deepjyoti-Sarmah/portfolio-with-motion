@@ -5,6 +5,7 @@ import { Subheading } from "@/components/sub-heading";
 import { TestimonialsPage } from "@/components/testimonials";
 import WorkTimeline from "@/components/work-timeline";
 import ContactPage from "./contact/page";
+import { projects } from "@/constants/projects";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
           I'm a software engineer with a passion for building scalable and
           efficient systems.
         </Subheading>
-        <Projects />
+        <Projects projects={projects.slice(0, 3)} />
         <WorkTimeline />
         <TestimonialsPage />
         <ContactPage />
