@@ -17,7 +17,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="my-6 border-t border-secondary px-4 py-6">
+    <div className="my-6 border-t border-secondary px-4 py-4">
       <SectionHeading delay={0.2} className="mb-4">
         Get in touch
       </SectionHeading>
