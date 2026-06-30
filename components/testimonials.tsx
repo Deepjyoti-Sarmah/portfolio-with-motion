@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { SectionHeading } from "./section-heading";
@@ -63,9 +64,11 @@ const TestimonialCard = ({
     <div className="mx-4 flex h-50 w-full max-w-60 flex-col justify-between gap-4 rounded-xl p-4 px-4  transition duration-300 shadow shadow-secondary hover:shadow-lg hover:scale-[1.01] ease-in-out bg-card">
       <p className="text-sm text-muted-foreground">{quote}</p>
       <div className="flex items-center gap-4 border-t border-secondary py-2">
-        <img
+        <Image
           src={avatar}
           alt={name}
+          width={20}
+          height={20}
           className="size-5 rounded-full object-cover"
         />
         <p className="text-sm text-foreground">{name}</p>

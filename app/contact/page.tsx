@@ -22,7 +22,7 @@ export default function ContactPage() {
         Get in touch
       </SectionHeading>
       <Subheading className="mb-4 -ml-4">
-        I'm open to freelancing offers. Reach out to me to inquire more about my
+        I&apos;m open to freelancing offers. Reach out to me to inquire more about my
         work.
       </Subheading>
 

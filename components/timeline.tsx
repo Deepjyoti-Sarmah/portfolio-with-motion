@@ -203,7 +203,7 @@ export default function TimeLine() {
       className="shadow-primary my-4 border-t border-secondary px-4 py-4"
     >
       <SectionHeading delay={0.2} className="mb-4 text-center sm:text-left">
-        Here's a timeline of my life achievements.
+        Here&apos;s a timeline of my life achievements.
       </SectionHeading>
       {data.map((year, index) => (
         <div key={year.title} className="mb-4">
