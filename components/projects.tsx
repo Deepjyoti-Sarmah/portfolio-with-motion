@@ -7,9 +7,7 @@ import { SectionHeading } from "./section-heading";
 import { motion } from "motion/react";
 import Link from "next/link";
 
-const MotionCard = motion.create(_Card, {
-  forwardMotionProps: true,
-});
+const MotionCard = motion.create(_Card);
 
 export function Projects({
   projects = defaultProjects,
@@ -39,7 +37,7 @@ export function Projects({
                 delay: idx * 0.1,
                 ease: "easeInOut",
               }}
-              className="group h-full flex flex-col overflow-hidden rounded-xl bg-card dark:bg-card shadow hover:shadow-md transition-shadow hover:scale-[1.01] duration-300 ease-in-out p-3"
+              className="group h-full flex flex-col overflow-hidden rounded-xl bg-card shadow hover:shadow-md transition-shadow hover:scale-[1.01] duration-300 ease-in-out p-3"
             >
               <div className="relative w-full overflow-hidden">
                 <Image

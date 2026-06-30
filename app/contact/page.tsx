@@ -27,7 +27,7 @@ export default function ContactPage() {
       </Subheading>
 
       <div className="mt-4 flex justify-center md:justify-start">
-        <Link href="mailto:deepjyotisarmah37@gmail.com" passHref>
+        <Link href="mailto:deepjyotisarmah37@gmail.com">
           <motion.div
             className="inline-block"
             initial="initial"
