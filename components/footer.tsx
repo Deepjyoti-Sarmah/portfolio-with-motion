@@ -14,14 +14,14 @@ export const Footer = () => {
         Built by Deepjyoti Sarmah with patience and love
       </p>
       <div className="flex items-center justify-center gap-4">
-        <Link href="https://x.com/Deepjyo79836591">
-          <IconBrandX className="size-4 text-muted-foreground hover:text-neutral-800" />
+        <Link href="https://x.com/Deepjyo79836591" target="_blank" rel="noopener noreferrer">
+          <IconBrandX className="size-4 text-muted-foreground hover:text-foreground transition-colors duration-200" />
         </Link>
-        <Link href="https://www.linkedin.com/in/deepjyoti-sarmah-539b96202">
-          <IconBrandLinkedin className="size-4 text-muted-foreground hover:text-neutral-800" />
+        <Link href="https://www.linkedin.com/in/deepjyoti-sarmah-539b96202" target="_blank" rel="noopener noreferrer">
+          <IconBrandLinkedin className="size-4 text-muted-foreground hover:text-foreground transition-colors duration-200" />
         </Link>
-        <Link href="https://github.com/Deepjyoti-Sarmah">
-          <IconBrandGithub className="size-4 text-muted-foreground hover:text-neutral-800" />
+        <Link href="https://github.com/Deepjyoti-Sarmah" target="_blank" rel="noopener noreferrer">
+          <IconBrandGithub className="size-4 text-muted-foreground hover:text-foreground transition-colors duration-200" />
         </Link>
       </div>
     </Container>

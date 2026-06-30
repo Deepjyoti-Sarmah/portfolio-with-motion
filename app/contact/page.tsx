@@ -29,7 +29,7 @@ export default function ContactPage() {
       <div className="mt-4 flex justify-center md:justify-start">
         <Link href="mailto:deepjyotisarmah37@gmail.com">
           <motion.div
-            className="inline-block"
+            className="inline-flex items-center gap-2 bg-foreground text-primary-foreground px-6 py-3 rounded-md text-sm font-medium transition-colors duration-200 shadow-sm hover:bg-neutral-800 dark:hover:bg-neutral-200 cursor-pointer"
             initial="initial"
             whileHover="hover"
             variants={buttonVariants}
@@ -39,19 +39,17 @@ export default function ContactPage() {
               damping: 20,
             }}
           >
-            <motion.button className="flex items-center bg-foreground text-primary-foreground px-6 py-3 rounded-md shadow">
-              <span className="mr-2">Send a message</span>
-              <motion.span
-                className="inline-block"
-                variants={iconVariants}
-                transition={{
-                  duration: 0.3,
-                  ease: "easeInOut",
-                }}
-              >
-                <IconSend2 size={20} />
-              </motion.span>
-            </motion.button>
+            <span>Send a message</span>
+            <motion.span
+              className="inline-block"
+              variants={iconVariants}
+              transition={{
+                duration: 0.2,
+                ease: "easeInOut",
+              }}
+            >
+              <IconSend2 size={16} />
+            </motion.span>
           </motion.div>
         </Link>
       </div>

@@ -14,17 +14,17 @@ export const Publications = () => {
       </SectionHeading>
       <div className="py-2">
         <Link
-          href="https://www.cys.cic.ipn.mx/index.php/CyS/article/view/5147"
+          href="https://drive.google.com/file/d/1eow0EpzG3l9OTUVk8RVpsBrLYuyJzsb0/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="no-underline block"
         >
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, filter: "blur(10px)", y: 10 }}
+            whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, ease: "easeInOut", delay: 0.1 }}
-            className="group flex flex-col md:flex-row gap-6 rounded-xl border border-secondary p-6 shadow-sm hover:shadow-md transition-shadow hover:scale-[1.005] duration-300 ease-in-out bg-card"
+            transition={{ duration: 0.3, ease: "easeInOut", delay: 0.1 }}
+            className="group flex flex-col md:flex-row gap-6 rounded-xl border border-secondary p-6 shadow-sm hover:shadow-md transition-shadow hover:scale-[1.01] duration-300 ease-in-out bg-card"
           >
             <div className="flex size-12 items-center justify-center rounded-lg bg-muted text-muted-foreground group-hover:text-foreground transition-colors shrink-0">
               <IconFileText size={28} />

@@ -5,6 +5,7 @@ import { IconCircleCheckFilled } from "@tabler/icons-react";
 import { motion, useInView } from "motion/react";
 import React, { useRef } from "react";
 import { SectionHeading } from "./section-heading";
+import Link from "next/link";
 
 type Data = {
   title: string;
@@ -23,17 +24,101 @@ export default function TimeLine() {
 
   const data: Data[] = [
     {
+      title: "2026",
+      content: [
+        {
+          title: "Built Coding RAG System",
+          description: (
+            <span>
+              Developed a repository-level retrieval-augmented generation system for source code understanding.{" "}
+              <Link
+                href="https://github.com/Deepjyoti-Sarmah/coding-RAG-system"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-muted-foreground hover:text-foreground transition-colors"
+              >
+                View GitHub
+              </Link>
+            </span>
+          ),
+        },
+        {
+          title: "Engineered Perpetual Futures Exchange",
+          description: (
+            <span>
+              Designed a high-throughput matching engine supporting margin allocation and event-sourced state replication.{" "}
+              <Link
+                href="https://github.com/Deepjyoti-Sarmah/perpatual-futures-exchange"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-muted-foreground hover:text-foreground transition-colors"
+              >
+                View GitHub
+              </Link>
+            </span>
+          ),
+        },
+        {
+          title: "Published UAV Research Paper",
+          description: (
+            <span>
+              Published drone-based facial recognition research utilizing MTCNN and FaceNet in Computación y Sistemas journal.{" "}
+              <Link
+                href="https://drive.google.com/file/d/1eow0EpzG3l9OTUVk8RVpsBrLYuyJzsb0/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Read Publication
+              </Link>
+            </span>
+          ),
+        },
+      ],
+    },
+    {
       title: "2025",
       content: [
         {
-          title: "Built AI Agents & RAG Systems",
-          description:
-            "Developed repository-level RAG systems (LangGraph, Gemini) and Orangutan, a Go-based autonomous coding agent execution harness.",
+          title: "Launched VibeCode & Orangutan Agent",
+          description: (
+            <span>
+              Built VibeCode, an LLM-powered full-stack generation app in sandboxed E2B containers, and Orangutan, a Go-based autonomous agent harness.{" "}
+              <Link
+                href="https://github.com/Deepjyoti-Sarmah/VibeCode"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-muted-foreground hover:text-foreground transition-colors"
+              >
+                View VibeCode
+              </Link>{" "}
+              /{" "}
+              <Link
+                href="https://github.com/Deepjyoti-Sarmah/Orangutan-agent"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-muted-foreground hover:text-foreground transition-colors"
+              >
+                View Orangutan
+              </Link>
+            </span>
+          ),
         },
         {
-          title: "Engineered Futures Exchange",
-          description:
-            "Designed a high-throughput matching engine supporting margin allocation and event-sourced state replication using Redis Streams.",
+          title: "Developed Multimodal Sentiment Pipelines",
+          description: (
+            <span>
+              Created video emotion sentiment models using deep facial recognition and Transformers.{" "}
+              <Link
+                href="https://github.com/Deepjyoti-Sarmah/video-emotion-sentiment-model-project"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-muted-foreground hover:text-foreground transition-colors"
+              >
+                View GitHub
+              </Link>
+            </span>
+          ),
         },
       ],
     },
@@ -41,14 +126,36 @@ export default function TimeLine() {
       title: "2024",
       content: [
         {
-          title: "Published UAV Research Paper",
-          description:
-            "Published drone-based facial recognition research utilizing MTCNN and FaceNet in Computación y Sistemas journal.",
+          title: "Completed LFX Mentorship",
+          description: (
+            <span>
+              Successfully finalized the Fabric Private Chaincode Client SDK integration with the Fabric Gateway API under the Hyperledger Foundation.{" "}
+              <Link
+                href="https://github.com/hyperledger-labs/fabric-private-chaincode"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-muted-foreground hover:text-foreground transition-colors"
+              >
+                View Hyperledger
+              </Link>
+            </span>
+          ),
         },
         {
-          title: "Completed LFX Mentorship",
-          description:
-            "Successfully finalized the Fabric Private Chaincode Client SDK integration with the Fabric Gateway API under the Hyperledger Foundation.",
+          title: "Systems Programming Focus",
+          description: (
+            <span>
+              Dived deep into concurrent systems, TCP/IP network socket protocols, and built custom web servers from scratch in Go.{" "}
+              <Link
+                href="https://github.com/Deepjyoti-Sarmah/HTTP-from-TCP"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-muted-foreground hover:text-foreground transition-colors"
+              >
+                View TCP Server
+              </Link>
+            </span>
+          ),
         },
       ],
     },
@@ -56,14 +163,25 @@ export default function TimeLine() {
       title: "2023",
       content: [
         {
-          title: "Joined Hyperledger Mentorship",
+          title: "Selected for Hyperledger Mentorship",
           description:
             "Selected as SDK Developer for Hyperledger LFX, building Go client SDKs and securing execution environments.",
         },
         {
-          title: "Systems Programming Focus",
-          description:
-            "Dived deep into concurrent systems, TCP/IP network socket protocols, and O(1) in-memory data structures.",
+          title: "Concurrent Systems & Cryptography",
+          description: (
+            <span>
+              Explored Go goroutine models, mutex synchronization, and built secure deterministic address derivation systems.{" "}
+              <Link
+                href="https://github.com/Deepjyoti-Sarmah/bitcoin-burner-wallet-go"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-muted-foreground hover:text-foreground transition-colors"
+              >
+                View Bitcoin Project
+              </Link>
+            </span>
+          ),
         },
       ],
     },
@@ -71,19 +189,9 @@ export default function TimeLine() {
       title: "2022",
       content: [
         {
-          title: "Concurrent Systems & Cryptography",
+          title: "Began Programming Journey",
           description:
-            "Explored Go goroutine models, mutex synchronization, and built secure payment generation systems like deterministic wallets.",
-        },
-      ],
-    },
-    {
-      title: "2021",
-      content: [
-        {
-          title: "Started Developer Journey",
-          description:
-            "Began programming, focused on backend and protocol fundamentals, and made my first GitHub contributions.",
+            "Started coding, focused on backend and protocol fundamentals, and made my first GitHub contributions.",
         },
       ],
     },
