@@ -21,10 +21,10 @@ export const Navbar = () => {
       title: "About",
       href: "/about",
     },
-    // {
-    //   title: "Contact",
-    //   href: "/contact",
-    // },
+    {
+      title: "Resume",
+      href: "https://drive.google.com/file/d/1TAp_cI_jtQtIMxSirWhg4Nlx3xTk2p7-/view?usp=sharing",
+    },
   ];
 
   const [hovered, setHovered] = useState<number | null>(null);
@@ -75,25 +75,30 @@ export const Navbar = () => {
 
             {/* Desktop nav */}
             <div className="hidden items-center md:flex">
-              {navItems.map((item, idx) => (
-                <Link
-                  key={idx}
-                  href={item.href}
-                  className="relative px-3 py-1 text-sm"
-                  onMouseEnter={() => setHovered(idx)}
-                  onMouseLeave={() => setHovered(null)}
-                >
-                  {hovered === idx && (
-                    <motion.span
-                      layoutId="hovered-span"
-                      className="absolute inset-0 h-full w-full rounded-md bg-muted"
-                    />
-                  )}
-                  <span className="relative z-10 text-secondary-foreground">
-                    {item.title}
-                  </span>
-                </Link>
-              ))}
+              {navItems.map((item, idx) => {
+                const isExternal = item.href.startsWith("http");
+                return (
+                  <Link
+                    key={idx}
+                    href={item.href}
+                    target={isExternal ? "_blank" : undefined}
+                    rel={isExternal ? "noopener noreferrer" : undefined}
+                    className="relative px-3 py-1 text-sm"
+                    onMouseEnter={() => setHovered(idx)}
+                    onMouseLeave={() => setHovered(null)}
+                  >
+                    {hovered === idx && (
+                      <motion.span
+                        layoutId="hovered-span"
+                        className="absolute inset-0 h-full w-full rounded-md bg-muted"
+                      />
+                    )}
+                    <span className="relative z-10 text-secondary-foreground">
+                      {item.title}
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
           </motion.nav>
 
@@ -101,16 +106,21 @@ export const Navbar = () => {
           {isOpen && (
             <div className="mt-2 w-full border-t border-muted bg-background md:hidden">
               <div className="flex flex-col space-y-2 px-6 py-4">
-                {navItems.map((item, idx) => (
-                  <Link
-                    key={idx}
-                    href={item.href}
-                    className="py-2 text-base text-secondary-foreground"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item.title}
-                  </Link>
-                ))}
+                {navItems.map((item, idx) => {
+                  const isExternal = item.href.startsWith("http");
+                  return (
+                    <Link
+                      key={idx}
+                      href={item.href}
+                      target={isExternal ? "_blank" : undefined}
+                      rel={isExternal ? "noopener noreferrer" : undefined}
+                      className="py-2 text-base text-secondary-foreground"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.title}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           )}

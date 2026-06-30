@@ -9,10 +9,7 @@ export default function AboutPage() {
       <Container className="min-h-screen pt-[80px]  px-8 md:pt-20 md:pb-10  ">
         <Heading>About Me</Heading>
         <Subheading>
-          I'm a curious developer who loves building clean, functional tools
-          with modern stacks. I enjoy learning by doing. I care about good
-          design, thoughtful architecture, and keeping things as simple as
-          possible (but no simpler).
+          I am a software engineer focused on building high-performance backend systems, concurrent distributed architectures, and AI engineering (RAG systems, autonomous agents, and multimodal pipelines). I enjoy diving deep into raw network protocols, deterministic transaction engines, and building scalable developer tools.
         </Subheading>
         <TimeLine />
       </Container>

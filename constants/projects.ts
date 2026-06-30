@@ -7,44 +7,66 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Invoice-Cart",
-    src: "/invoice-cart.png",
-    href: "https://invoice-cart.vercel.app",
-    description: "A SaaS platform for creating and managing invoices.",
-  },
-  {
-    title: "Ping-panda",
-    src: "/ping-panda.png",
-    href: "https://ping-panda-rust.vercel.app",
+    title: "Coding RAG System",
+    src: "https://opengraph.githubassets.com/1/Deepjyoti-Sarmah/coding-RAG-system",
+    href: "https://github.com/Deepjyoti-Sarmah/coding-RAG-system",
     description:
-      "A SaaS platform for sending and receiving notifications over discord.",
+      "Repository-level retrieval-augmented generation system for source code understanding. Built with Python, LangGraph, Gemini, ChromaDB, and Tree-Sitter.",
   },
   {
-    title: "Record-scribe",
-    src: "/record-scribe.png",
-    href: "https://recordscribe.vercel.app",
+    title: "Perpetual Futures Exchange",
+    src: "https://opengraph.githubassets.com/1/Deepjyoti-Sarmah/perpatual-futures-exchange",
+    href: "https://github.com/Deepjyoti-Sarmah/perpatual-futures-exchange",
     description:
-      "A website which translate and transcribe audio to different languages.",
+      "High-performance backend for a perpetual futures exchange with an event-sourced matching engine. Built with TypeScript, Bun, Redis Streams, and PostgreSQL.",
   },
   {
-    title: "Better LS (Rust)",
-    src: "https://opengraph.githubassets.com/1/Deepjyoti-Sarmah/better-ls-rust",
-    href: "https://github.com/Deepjyoti-Sarmah/better-ls-rust",
+    title: "VibeCode — AI Code Gen Platform",
+    src: "https://opengraph.githubassets.com/1/Deepjyoti-Sarmah/VibeCode",
+    href: "https://vibe-code-iota.vercel.app",
     description:
-      "A blazing fast, user-friendly alternative to the Unix `ls` command written in Rust.",
+      "LLM-powered platform for generating and executing full-stack applications in sandboxed E2B containers. Built with Next.js, tRPC, Prisma, and Inngest.",
   },
   {
-    title: "Bitcoin Burner Wallet (Go)",
+    title: "Orangutan — AI Coding Agent",
+    src: "https://opengraph.githubassets.com/1/Deepjyoti-Sarmah/Orangutan-agent",
+    href: "https://github.com/Deepjyoti-Sarmah/Orangutan-agent",
+    description:
+      "A Go-based autonomous coding agent execution harness featuring Gemini tool-calling and stream response support.",
+  },
+  {
+    title: "Video Emotion Sentiment Analysis",
+    src: "https://opengraph.githubassets.com/1/Deepjyoti-Sarmah/video-emotion-sentiment-model-project",
+    href: "https://github.com/Deepjyoti-Sarmah/video-emotion-sentiment-model-project",
+    description:
+      "Multimodal AI pipeline for facial emotion detection and speech sentiment classification in videos. Built with Python, OpenCV, and Transformers.",
+  },
+  {
+    title: "Cinema Ticket Booking System",
+    src: "https://opengraph.githubassets.com/1/Deepjyoti-Sarmah/cinema-booking-golang",
+    href: "https://github.com/Deepjyoti-Sarmah/cinema-booking-golang",
+    description:
+      "A concurrent seat reservation system validating atomic transactions under high concurrency. Built with Go and Redis SET NX locking.",
+  },
+  {
+    title: "HTTP from TCP",
+    src: "https://opengraph.githubassets.com/1/Deepjyoti-Sarmah/HTTP-from-TCP",
+    href: "https://github.com/Deepjyoti-Sarmah/HTTP-from-TCP",
+    description:
+      "A custom HTTP/1.1 server built directly over raw TCP sockets using a state-machine parser in Go.",
+  },
+  {
+    title: "Michi — Bitcoin Wallet Address Gen",
     src: "https://opengraph.githubassets.com/1/Deepjyoti-Sarmah/bitcoin-burner-wallet-go",
     href: "https://github.com/Deepjyoti-Sarmah/bitcoin-burner-wallet-go",
     description:
-      "A lightweight Bitcoin wallet written in Go for ephemeral, burner-style transactions.",
+      "Deterministic Bitcoin payment address derivation system using HD wallet derivation. Built with Go and btcsuite.",
   },
   {
-    title: "Go Async APIs",
-    src: "https://opengraph.githubassets.com/1/Deepjyoti-Sarmah/go_async_apis",
-    href: "https://github.com/Deepjyoti-Sarmah/go_async_apis",
+    title: "Cache in Go",
+    src: "https://opengraph.githubassets.com/1/Deepjyoti-Sarmah/Cache-using-Golang",
+    href: "https://github.com/Deepjyoti-Sarmah/Cache-using-Golang",
     description:
-      "A high-performance asynchronous API server in Go using worker pool patterns and queue management.",
-  }
+      "In-memory LRU cache implementation featuring O(1) lookup and eviction in Go.",
+  },
 ];

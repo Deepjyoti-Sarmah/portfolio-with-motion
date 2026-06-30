@@ -16,7 +16,7 @@ export const Heading = ({
     <motion.div
       initial={{
         opacity: 0,
-        filter: "blue(10px)",
+        filter: "blur(10px)",
         y: 10,
       }}
       whileInView={{

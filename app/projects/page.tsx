@@ -9,10 +9,7 @@ export default function ProjectsPage() {
       <Container className="min-h-screen pt-[80px]  px-8 md:pt-20 md:pb-10">
         <Heading>Projects</Heading>
         <Subheading>
-          I'm a curious developer who loves building clean, functional tools
-          with modern stacks. I enjoy learning by doing. I care about good
-          design, thoughtful architecture, and keeping things as simple as
-          possible (but no simpler).
+          A selection of projects focusing on concurrent backend engines, networking protocols, in-memory databases, and advanced AI agent workflows.
         </Subheading>
         <Projects />
       </Container>

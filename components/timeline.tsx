@@ -26,13 +26,14 @@ export default function TimeLine() {
       title: "2025",
       content: [
         {
-          title: "Launched PingPanda",
+          title: "Built AI Agents & RAG Systems",
           description:
-            "Shipped an AI support tool with guest login and demo mode.",
+            "Developed repository-level RAG systems (LangGraph, Gemini) and Orangutan, a Go-based autonomous coding agent execution harness.",
         },
         {
-          title: "More open source",
-          description: "Published cool side projects with AI. Great feedback!",
+          title: "Engineered Futures Exchange",
+          description:
+            "Designed a high-throughput matching engine supporting margin allocation and event-sourced state replication using Redis Streams.",
         },
       ],
     },
@@ -40,14 +41,14 @@ export default function TimeLine() {
       title: "2024",
       content: [
         {
-          title: "Dived into Solana & DePIN",
+          title: "Published UAV Research Paper",
           description:
-            "Built staking tools using BonkSOL. Attended Solana Summit.",
+            "Published drone-based facial recognition research utilizing MTCNN and FaceNet in Computación y Sistemas journal.",
         },
         {
-          title: "Built real-time apps",
+          title: "Completed LFX Mentorship",
           description:
-            "Used Golang, PostgreSQL, Redis. Focused on speed & scale.",
+            "Successfully finalized the Fabric Private Chaincode Client SDK integration with the Fabric Gateway API under the Hyperledger Foundation.",
         },
       ],
     },
@@ -55,12 +56,14 @@ export default function TimeLine() {
       title: "2023",
       content: [
         {
-          title: "Interned at Hyperledger",
-          description: "Built a design system and shipped production features.",
+          title: "Joined Hyperledger Mentorship",
+          description:
+            "Selected as SDK Developer for Hyperledger LFX, building Go client SDKs and securing execution environments.",
         },
         {
-          title: "Won hackathons",
-          description: "Built AI + canvas tools at Devfolio events.",
+          title: "Systems Programming Focus",
+          description:
+            "Dived deep into concurrent systems, TCP/IP network socket protocols, and O(1) in-memory data structures.",
         },
       ],
     },
@@ -68,12 +71,9 @@ export default function TimeLine() {
       title: "2022",
       content: [
         {
-          title: "Leveled up frontend skills",
-          description: "Learned React, Tailwind, and started serious dev work.",
-        },
-        {
-          title: "Typed everything",
-          description: "Used TypeScript across backend & frontend.",
+          title: "Concurrent Systems & Cryptography",
+          description:
+            "Explored Go goroutine models, mutex synchronization, and built secure payment generation systems like deterministic wallets.",
         },
       ],
     },
@@ -81,12 +81,9 @@ export default function TimeLine() {
       title: "2021",
       content: [
         {
-          title: "Started coding",
-          description: "Built mini apps with JavaScript and loved it.",
-        },
-        {
-          title: "First GitHub push",
-          description: "Uploaded my first public repo!",
+          title: "Started Developer Journey",
+          description:
+            "Began programming, focused on backend and protocol fundamentals, and made my first GitHub contributions.",
         },
       ],
     },
